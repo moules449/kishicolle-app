@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+        <script>
+        ons.bootstrap();
+    </script>
+
+</head>
+<body>
+	<ons-tabbar var="tabbar">
+        <ons-tabbar-item
+            page="navigator.html"
+            active="true">
+            <div  class="tab-bar__icon ng-scope">
+                <i style="font-size: 34px; line-height: 34px; vertical-align: top;" class="icon-icon_kishicolle"></i>
+            </div>
+            <div class="tab-bar__label ng-binding ng-scope">岸コレ</div>
+            </ons-tabbar-item>
+        <ons-tabbar-item
+            page="vr.html">
+                <div  class="tab-bar__icon ng-scope">
+                <i style="font-size: 34px; line-height: 34px; vertical-align: top;" class="icon-icon_vr"></i>
+            </div>
+            <div  class="tab-bar__label ng-binding ng-scope">VR</div>
+            </ons-tabbar-item>
+        <ons-tabbar-item
+            icon="qrcode"
+            label="QR"
+            page="qr.html"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="info"
+            label="情報"
+            page="info.html"></ons-tabbar-item>
+    </ons-tabbar>
+</body>
+</html>

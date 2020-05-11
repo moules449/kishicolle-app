@@ -1,0 +1,31 @@
+<ons-navigator title="Navigator" var="myNavigator">
+  <ons-page>
+    <ons-toolbar>
+      <div class="center">VR</div>
+    </ons-toolbar>
+    
+    <div class="wrap">
+        <div class="content">
+            <div class="button-menu">
+                <ons-button class="button button--large" onclick="myNavigator.pushPage('vr/vr_description.html', { animation : 'slide' } )">
+                            VR機能について
+                            </ons-button>
+                <ons-button class="button button--large sky" onclick="myNavigator.pushPage('vr/vr_ochiai.html', { animation : 'slide' } )">
+                            落合文庫
+                            </ons-button>
+                <ons-button class="button button--large red" onclick="myNavigator.pushPage('vr/vr_specimen.html', { animation : 'slide' } )">
+                            生物資料室
+                            </ons-button>
+                <ons-button class="button button--large purple" onclick="myNavigator.pushPage('vr/vr_scientific.html', { animation : 'slide' } )">
+                            科学資料室
+                            </ons-button>
+                <ons-button class="button button--large yellow" onclick="myNavigator.pushPage('vr/vr_local.html', { animation : 'slide' } )">
+                            郷土資料室
+                            </ons-button>
+            </div>
+        </div>
+    </div>
+    
+  </ons-page>
+</ons-navigator>
+

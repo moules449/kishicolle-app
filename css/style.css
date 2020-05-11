@@ -1,0 +1,521 @@
+/*---------------------------------------------------------
+Onsen UIパーツ
+---------------------------------------------------------*/
+
+.tab-bar{
+    background-color: #FFFFFF;
+}
+
+:checked + .tab-bar__button {
+    color: #7bd716;
+}
+
+:checked + .tab-bar__button > .tab-bar__icon {
+  color: #7bd716;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  line-height: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 17px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: auto;
+  text-decoration: none;
+  padding: 4px 10px;
+  font-size: 17px;
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #fff;
+  vertical-align: middle;
+  background-color: #FFFFFF;
+  border: 0px solid currentColor;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  /*border-left: 8px #00E617 solid;*/
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  box-shadow:2px 2px 2px  rgba(0, 0, 0, 0.2);
+  
+  background-color: #7bd716;
+  border: 1px #6ec014 solid;
+  border-bottom: 3px #6ec014 solid;
+}
+.button:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button:active {
+  background-color: #7cada6;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  opacity: 0.2;
+}
+.button:focus {
+  outline: 0;
+}
+.button:disabled,
+.button[disabled] {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.button--large {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0 4px;
+  padding: 4px 12px;
+  display: block;
+  /*width: 100%;*/
+  text-align: center;
+}
+.button--large:active {
+  background-color: #fff;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  opacity: 0.2;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large:disabled,
+.button--large[disabled] {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+.button--large:hover {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.button--large:focus {
+  outline: 0;
+}
+
+.green{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-left: 8px #7bd716 solid;
+}
+.red{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-left: 8px #E6006B solid;
+}
+
+.yellow{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-left: 8px #CFE600 solid
+}
+
+.sky{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-left: 8px #0DFFFD solid;
+}
+
+.purple{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-left: 8px #430CE8 solid;
+}
+
+.accent{
+    background-color: E89D0C;
+}
+
+/*---------------------------------------------------------
+HTMLパーツ
+---------------------------------------------------------*/
+
+html{font-size: 62.5%;}
+
+
+.wrap{
+    margin: 0;
+    background-color: #eeeeee;
+    font-size: 1.4rem;
+    line-height: 170%;
+}
+
+/*---------------------------------------------------------
+タブバー
+---------------------------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?gb5wie');
+  src:  url('../fonts/icomoon.eot?gb5wie#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gb5wie') format('truetype'),
+    url('../fonts/icomoon.woff?gb5wie') format('woff'),
+    url('../fonts/icomoon.svg?gb5wie#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-icon_kishicolle:before {
+  content: "\e900";
+}
+.icon-icon_vr:before {
+  content: "\e901";
+}
+
+ons-tabbar-item i{
+  font-family: 'icomoon';
+  font-size: 38px;
+  font-style: normal;
+  display: block;
+  padding: 0 0 2px 0;
+}
+
+/*---------------------------------------------------------
+ページ本文
+---------------------------------------------------------*/
+div.wrap h1{
+    margin:0;
+    padding: 12px 0 6px 20px;
+	color: #000;
+	font-size: 1.8rem;
+	border-bottom: solid 4px #7bd716;
+	background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    background-color:#ffffff;	
+	margin: 8px 0px 10px 0px;
+	padding-top: 4px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+	font-weight: normal;
+	letter-spacing: 0em;
+	font-size: 1.8rem;
+	border-bottom: solid 2px #cdcdcd;
+	border-left: solid 5px /*#7BB5AC */#00E617;
+	clear: both;						/* 回り込みの解除 */
+	text-decoration: none;
+}
+
+.content{
+    margin: 0 4px;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+
+.sentence{
+    margin: 0;
+    padding: 8px;
+	background-color: /*#fcfcfc*/ #ffffff;
+	letter-spacing: 0.02em;
+	line-height: 160%;
+	border: solid 1px #d9d9d9;
+	font-family:"Lucida Grande","Hiragino Kaku Gothic ProN","Meiryo", "sans-serif";
+}
+
+.accordion-content .sentence{
+    border: none;
+}
+
+.sentence img{
+    width: 100%;
+}
+
+.scroll_wrap{
+    margin: 0 0 8px 0;
+    padding: 8px;
+    background-color: #ffffff;
+	letter-spacing: 0.02em;
+	line-height: 160%;
+	border: solid 1px #d9d9d9;
+	font-family:"Lucida Grande","Hiragino Kaku Gothic ProN","Meiryo", "sans-serif";
+}
+
+/*---------------------------------------------------------
+スクロールメニュー
+---------------------------------------------------------*/
+div.scroll{
+    margin: 18px auto;
+     box-shadow:2px 2px 2px  rgba(0, 0, 0, 0.2);
+     background-color: #f8f8f8;
+}
+div.scroll-box{
+    white-space: nowrap;
+    width: 100%;
+    height: 106px;
+    background-color: #fcfcfc;
+      overflow: scroll;
+     -webkit-overflow-scrolling: touch;
+}
+
+div.scroll-card{
+    display: inline-block;
+    width: 80px;
+    height: 100px;
+}
+
+div.card-img{
+    width: 100%;
+}
+
+div.card-img img{
+    width: 100%;
+}
+
+div.card-title{
+    font-size: 1.4rem;
+}
+
+/*---------------------------------------------------------
+アコーディオン(CSSのみ)
+---------------------------------------------------------*/
+div.accordion{
+    margin: 8px;
+}
+
+label {
+    display: block;
+    position: relative;
+    background: #7CADA6;
+    margin: 0;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+input[type="checkbox"].on-off{
+    display: none;
+}
+
+div.accordion-content{
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+label div{
+    display: table-cell;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: solid 1px #888;
+    top: 12px;
+    right: 20px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #eeeeee;
+    color: #888;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+input[type="checkbox"].on-off + div{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + div.accordion-content{
+    height: 250px;
+}
+
+input[type="checkbox"].on-off:checked + div.accordion-content.large{
+    height: 450px;
+}
+
+/*---------------------------------------------------------
+メニュー用リストデザイン
+---------------------------------------------------------*/
+div.li-menu{
+    margin: 16px 0;
+}
+
+.li-menu ul{
+    margin: 8px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.li-menu li{
+    margin: 10px 0;
+    padding: 0;
+    background-color: #7CADA6;
+    position:relative;
+    height: 44px;
+    box-shadow:5px 5px rgba(62,99,94,0.8);
+    -webkit-box-shadow:0px 5px 2px  rgba(62,99,94,0.8);
+    -moz-box-shadow:5px 5px rgba(62,99,94,0.8);
+}
+
+.li-menu li a{
+    display: block;
+    background-color: #7CADA6;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+}
+
+
+
+/*右の円*/
+.li-menu li:before{
+    content:'';
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+	-webkit-border-radius: 50%;/* 50%でもOK */
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #FFFFFF;/* 円の色 */
+}
+
+/*右の矢印*/
+ 
+.li-menu li:after{
+    content:''; 
+	display:block; 
+	position:absolute; 
+	box-shadow: 0 0 2px 2px rgba(255,255,255,0.2) inset;
+	top:18px; 
+	right: 8px; 
+	height:0; 
+	width:0; 
+	border-top: 6px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 9px solid #7CADA6;
+}
+
+/*---------------------------------------------------------
+メニュー用ボタン
+---------------------------------------------------------*/
+.button{
+    margin: 14px 0;
+}
+.button-menu{
+    margin: 14px 0px;
+    padding: 0;
+}
+
+/*---------------------------------------------------------
+VR画面用ボタン
+---------------------------------------------------------*/
+.vr{
+  display: -webkit-flex; /* Safari用 */
+  display: flex;
+  -webkit-justify-content: center; /* Safari用 */
+  justify-content: center;
+  -webkit-align-items: center; /* Safari用 */
+  align-items: center;
+}
+
+a.vr-button{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%); /* Safari用 */
+  transform: translateY(-50%);
+}
+
+/*---------------------------------------------------------
+画像付きリスト(Onsen Ui)
+---------------------------------------------------------*/
+.list-item-container {
+  line-height: 1;
+  padding: 15px 0px 15px 15px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.name {
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.location {
+  font-size: 14px;
+  opacity: 0.4;
+  margin-bottom: 6px;
+}
+
+.desc {
+  line-height: 1.2;
+  font-size: 13px;
+}
+
+
